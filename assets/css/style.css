@@ -1,0 +1,40 @@
+/* Penyesuaian di atas Bootstrap: palet, lebar, dan status tugas */
+:root {
+  --bs-primary: #1f6f6b;
+  --bs-primary-rgb: 31, 111, 107;
+  --bs-link-color: #1f6f6b;
+  --app-bg: #edf1f0;
+}
+
+body {
+  background: var(--app-bg);
+  font-family: "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+}
+
+.btn-primary {
+  --bs-btn-bg: #1f6f6b;
+  --bs-btn-border-color: #1f6f6b;
+  --bs-btn-hover-bg: #185a57;
+  --bs-btn-hover-border-color: #185a57;
+  --bs-btn-active-bg: #144b49;
+  --bs-btn-active-border-color: #144b49;
+}
+
+.app-shell { max-width: 640px; }
+.app-card { border: 0; border-radius: 0.75rem; overflow: hidden; }
+
+#filters .btn.active {
+  background: var(--bs-primary);
+  border-color: var(--bs-primary);
+  color: #fff;
+}
+
+.task-body { flex: 1 1 auto; min-width: 0; }
+.task-text { display: block; overflow-wrap: anywhere; }
+.task-meta { margin-top: 0.125rem; }
+.due-input { width: auto; max-width: 100%; }
+.task-item.is-done .task-text { color: var(--bs-secondary-color); text-decoration: line-through; }
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; }
+}
